@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 plt.style.use('ggplot')
 
 #histogram of height
-'''df.Height.plot(kind='hist', color='purple', edgecolor='pink', figsize=(5,4))
+df.Height.plot(kind='hist', color='purple', edgecolor='pink', figsize=(5,4))
 plt.title('Distribution of height', size=15)
 plt.xlabel('Height(inches)', size=10)
 plt.ylabel('Frequency', size=10)
@@ -79,7 +79,7 @@ s.plot(kind='scatter', x='Height', y='Weight', color='red',alpha=0.5,figsize=(6,
 plt.title('Relationship b/w Height and Weight (sample of 500 females)', size=12)
 plt.xlabel('height(inches)', size=12)
 plt.ylabel('Weight(pounds)',size=12)
-plt.show()'''
+plt.show()
 
 #df containing only female
 dfF=df[df['Gender']=='Female']
@@ -178,6 +178,7 @@ print('MSE: ',round((metrics.mean_squared_error(b_test,p)),2))
 print('RMSE: ',round((metrics.root_mean_squared_error(b_test,p)),2))
 
 print(lr_female.predict(fam))
+
 
 
 
